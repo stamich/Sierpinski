@@ -23,8 +23,8 @@ public class TriangleFractal extends Path2D.Double
 
     private void line(double length)
     {
-        double nNewX = (length * Math.cos(nAngle * Math.PI / 180)) + getCurrentPoint().getX();
-        double nNewY = (length * Math.cos(nAngle * Math.PI / 180)) + getCurrentPoint().getY();
+        double nNewX = (length * Math.cos(nAngle * Math.PI / 180)) + getCurrentPoint().getX() - 0.25;
+        double nNewY = (length * Math.sin(nAngle * Math.PI / 180)) + getCurrentPoint().getY() - 0.25;
         lineTo(nNewX, nNewY);
     }
 
